@@ -17,6 +17,7 @@ class Net(nn.Module):
         x = torch.relu(self.hidden2(x))
         x = self.out(x)
         return x
+    
 
 def init_weights(m):
     if type(m) == nn.Linear:
